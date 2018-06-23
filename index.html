@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>STRONA Z KOTAMI</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class="nav navbar-default navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigati</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">ABSTRAKCJA</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">HOME <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">PORTFOLIO</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+<!--CAROUSEL--> 
+    <div id="container">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators data-interval-3000 data-pause-hover">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="http://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_1280.jpg" alt="ciekawski koteczek">
+          </div>
+          <div class="item">
+            <img src="http://cdn.pixabay.com/photo/2016/11/29/01/10/adorable-1866475_1280.jpg" alt="biały kotek">
+          </div>
+          <div class="item">
+            <img src="http://cdn.pixabay.com/photo/2013/09/21/18/41/cat-184620_1280.jpg" alt="kocie oczy">
+          </div>
+          <div class="item">
+            <img src="http://cdn.pixabay.com/photo/2018/05/30/19/29/cat-3442257_1280.jpg" alt="rudasek">
+          </div>
+           <div class="item">
+            <img src="http://cdn.pixabay.com/photo/2016/01/20/13/05/cat-1151519_1280.jpg" alt="srebrny">
+          </div>
+          <div class="item">
+            <img src="http://cdn.pixabay.com/photo/2015/12/03/10/43/cat-1074657_1280.jpg" alt="młody rudy">
+          </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    
+<!--TABS-->  
+
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a href="#omnie" aria-controls="omnie" role="tab" data-toggle="tab">O MNIE</a></li>
+      <li role="presentation"><a href="#zainteresowania" aria-controls="zainteresowania" role="tab" data-toggle="tab">ZAINTERESOWANIA</a></li>
+      <li role="presentation"><a href="#dlaczegoja" aria-controls="dlaczegoja" role="tab" data-toggle="tab">DLACZEGO JA</a></li>
+    </ul>
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane active tab-pane fade in" id="omnie">
+    	<p>Zmiana zawodu po 50-tce? Czy jest możliwa?.<br>Jak nie spróbujesz to się nie dowiesz!<br> Powoli przygotowuje się do zmian. Przede wszystkim nauka i zdobycie wiedzy w nowej dla mnie dziedzinie.<br>
+    		Jestem miłosniczką kotów, opiekuję się dwuletnim kocurkiem o imieniu TACO.</p>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="zainteresowania">
+        <p>Lubię poczytać o samorozwoju, pobuszować w internecie w poszukiwaniu nowych pomysłów na zdrowe posiłki, zgłębiać wiedzę z zakresu front-endu. Gdy odejdzę od komputera lubię wykonać solidny trening na siłowni.</p>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="dlaczegoja">
+        <p>Ciepła i otwarta na ludzi. Lubię dobrą organizację czasu i pracy, dobrze czuje się pracując w zespole.</p>
+      </div>
+    </div>
+
+<!--MODAL-->
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">OTWÓRZ</button>
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title" id="myModalLabel">INFORMACJA</h4>
+            </div>
+            <div class="modal-body">
+              <p>Strona wykonana przez Annę w oparciu o informacje otrzymane podczas ćwiczeń na Bootcamp: WEB DEVELOPER PLUS prowadzonym przez Codemy SA, na platformie Kodilla.</p>
+              <p>Kotki, kocurki, koteczki cudowne stworzonka. Nie lubią, jak się je do czegoś zmusza. Potrafią się bardzo głęboko przywiązać do swoich opiekunów ale na miłość kota trzeba sobie zasłużyć.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">ZAMKNIJ</button>
+              <button type="button" class="btn btn-primary">ZAPISZ WSZYSTKO</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+<!--SCRIPT JS-->
+
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
+  </body>
+</html>            
